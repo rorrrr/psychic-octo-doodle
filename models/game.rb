@@ -6,11 +6,11 @@ class Game
   end
 
   def matchup
-    # if (@hand1|@hand2) == "water_baloon"
-    #   return "water_baloon"
-    # elsif (@hand1|@hand2) == "fire"
-    #   return "fire"
-    if @hand1 == "scissors" and @hand2 == "paper"
+    if @hand1 == "water_baloon" or @hand2 == "water_baloon"
+      return "water baloon"
+    elsif @hand1 =="fire" or @hand2 == "fire"
+      return "fire"
+    elsif @hand1 == "scissors" and @hand2 == "paper"
       return @hand1
     elsif @hand1 == "scissors" and @hand2 == "rock"
       return @hand2
